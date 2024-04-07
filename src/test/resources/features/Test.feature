@@ -9,7 +9,7 @@ Feature: Login Sauce Demo
 
   Scenario: Login with incorrect credentials
     Given User is on login page
-    And User fill username with "fikri"
+    And User fill username with "nicko30"
     And User fill password with "secret_sauce"
     And User click login
-    Then User get error
+    Then User get error "Epic sadface: Username and password do not match any user in this service"
